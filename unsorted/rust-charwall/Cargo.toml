@@ -1,0 +1,15 @@
+[package]
+name = "charwall"
+description = "Matrix-style X11/OpenGL wallpaper"
+version = "0.1.0"
+authors = ["vserov <vserov835@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+glam = "0.12"
+glium = "0.29"
+rand = "0.8"
+noise = "0.7"
+
+[build-dependencies]
+bindgen = "0.58"

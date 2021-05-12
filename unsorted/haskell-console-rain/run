@@ -1,0 +1,3 @@
+#!/bin/sh
+clear
+ghc -outputdir=/tmp -o /tmp/hsexe Main.hs && /tmp/hsexe

@@ -1,0 +1,15 @@
+<html>
+<body>
+<!-- 'muted' needed for 'autoplay' to work on Chrome -->
+<video id="video_1" autoplay muted></video>
+<video id="video_2" autoplay muted></video>
+<script src="ffrtc.js"></script>
+<script>
+window.onload = function() {
+    playWebrtc(document.getElementById('video_1'), 'ws://127.0.0.1:8081/ffrtc')
+    playWebrtc(document.getElementById('video_2'), 'ws://127.0.0.1:8082/ffrtc')
+}
+</script>
+</body>
+</html>
+
