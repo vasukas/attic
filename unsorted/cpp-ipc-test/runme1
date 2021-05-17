@@ -1,0 +1,10 @@
+#!/bin/sh
+clear
+#rm -r build
+mkdir build
+cd build
+
+#cmake -DDOWNLOAD_BOOSTS=1 .. && make || exit 1
+cmake .. && make || exit 1
+
+./test $@
